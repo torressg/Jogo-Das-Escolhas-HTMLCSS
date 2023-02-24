@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exemplo de Botões com Opções</title>
+    <style>
+        #titulo {
+            margin: 0 auto;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="titulo">Bem vinda ao Jogo das Escolhas!</h1>
+	<h2>Você quer um passeio...</h2>
+	<button id="btnOpcao1">Com destino </button>
+	<button id="btnOpcao2">Sem destino</button>
+	<button id="btnOpcao3">Não quero passeio</button>
+
+	<section id="opcao1" style="display:none;">
+		<h1>Você quer um passeio com destino.</h1>
+        <h2>Mas você quer um...</h2>
+		<button id="btnOpcao1_1">Cineminha</button>
+		<button id="btnOpcao1_2">Rolê em SP</button>
+		<button id="btnOpcao1_3">+18</button>
+	</section>
+
+	<section id="opcao2" style="display:none;">
+		<h2>Voce quer um passeio sem destino.</h2>
+        <h2>Escolha um botao e vamos ver....</h2>
+		<button id="btnOpcao2_1"> 1 </button>
+		<button id="btnOpcao2_2"> 2 </button>
+		<button id="btnOpcao2_3"> 3 </button>
+	</section>
+
+	<section id="opcao3" style="display:none;">
+		<h1>Voc� n�o quer passear, sem problemas.</h1>
+        <h2>O que gostaria de fazer em casa?</h2>
+        <button id="btnOpcao3_1">Botão 1</button>
+		<button id="btnOpcao3_2">Botão 2</button>
+		<button id="btnOpcao3_3">Botão 3</button>
+	</section>
+
+    <section id="opcao4" style="display:none;">
+        <h1>Voce escolheu <u>Cineminha</u></h1>
+		<h3>Voce quer um Cineminha...</h3>
+		<button id="btnOpcao4_1">Util</button>
+        <button id="btnOpcao4_2">Diferente</button>
+        <button id="btnOpcao4_3">Facil</button>
+	</section>
+
+	<script src="gpt.js"></script>
+</body>
+</html>
