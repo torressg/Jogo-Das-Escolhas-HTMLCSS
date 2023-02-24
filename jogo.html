@@ -7,21 +7,51 @@
             margin: 0 auto;
             text-align: center;
         }
+		.esconder {
+			display: none;
+		}
     </style>
 </head>
 <body>
+	<script>
+	function valorMotel() {
+		const valores = ["caro", "médio", "barato"];
+		const indiceAleatorio1 = Math.floor(Math.random() * valores.length);
+		const valorSorteado = valores[indiceAleatorio1];
+		alert(`Hmmm safadinha... 😏🤭🥵 \nO valor do quarto, escolhido pelo programa é ${valorSorteado}`);
+	}
+	function filmesCasa() {
+		const filmes = ["alugar um filme!", "assinar uma plataforma!", "achar um filme nos canais disponíveis!", "usar as plataformas que temos!"];
+		const indiceAleatorio2 = Math.floor(Math.random() * filmes.length);
+		const filmeSorteado = filmes[indiceAleatorio2];
+		alert(`Você escolher ver um filme, então.... \nHoje nós vamos ${filmeSorteado}`); 
+	}
+	function receitasCasa() {
+		const receitas = ["Surpresa de Uva!", "Torta de Frango!", "Pizza Caseira!"];
+		const indiceAleatorio3 = Math.floor(Math.random() * receitas.length);
+		const receitaSorteada = receitas[indiceAleatorio3];
+		alert(`Hoje nós vamos cozinhar, e a receita escolhida é: \n${receitaSorteada}`); 
+	}
+	function restComida() {
+		const comidas = ["McDonalds","BurguerKing","Subway","Spoleto","Jeronimo","hamburguer Artesanal a sua escolha","Mexicaníssimo"];
+		const indiceAleatorio4 = Math.floor(Math.random() * comidas.length);
+		const comidaSorteada = comidas[indiceAleatorio4];
+		alert(`Vamos pedir comida! Peça no restaurante: \n${comidaSorteada}`); 
+	}
+	</script>
     <h1 id="titulo">Bem vinda ao Jogo das Escolhas!</h1>
 	<h2>Você quer um passeio...</h2>
 	<button id="btnOpcao1">Com destino </button>
 	<button id="btnOpcao2">Sem destino</button>
 	<button id="btnOpcao3">Não quero passeio</button>
 
+	
 	<section id="opcao1" style="display:none;">
 		<h1>Você quer um passeio com destino.</h1>
         <h2>Mas você quer um...</h2>
 		<button id="btnOpcao1_1">Cineminha</button>
 		<button id="btnOpcao1_2">Rolê em SP</button>
-		<button id="btnOpcao1_3">+18</button>
+		<button onclick="valorMotel()" id="btnOpcao1_3">+18</button>
 	</section>
 
 	<section id="opcao2" style="display:none;">
@@ -33,21 +63,20 @@
 	</section>
 
 	<section id="opcao3" style="display:none;">
-		<h1>Voc� n�o quer passear, sem problemas.</h1>
+		<h1>Você não quer passear, sem problemas.</h1>
         <h2>O que gostaria de fazer em casa?</h2>
-        <button id="btnOpcao3_1">Botão 1</button>
-		<button id="btnOpcao3_2">Botão 2</button>
-		<button id="btnOpcao3_3">Botão 3</button>
+        <button onclick="filmesCasa()">Botão 1</button>
+		<button onclick="receitasCasa()">Botão 2</button>
+		<button onclick="restComida()">Botão 3</button>
 	</section>
 
     <section id="opcao4" style="display:none;">
-        <h1>Voce escolheu <u>Cineminha</u></h1>
-		<h3>Voce quer um Cineminha...</h3>
-		<button id="btnOpcao4_1">Util</button>
+		<h1>Voce quer um Cineminha...</h1>
+		<button id="btnOpcao4_1">Útil</button>
         <button id="btnOpcao4_2">Diferente</button>
-        <button id="btnOpcao4_3">Facil</button>
+        <button id="btnOpcao4_3">Fácil</button>
 	</section>
 
-	<script src="gpt.js"></script>
+	<script src="jogo.js"></script>
 </body>
 </html>
