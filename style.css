@@ -1,0 +1,262 @@
+body {
+  background-color: #151f29;
+}
+#container {
+  text-align: center;
+}
+  
+  h1 {
+    margin-top: 50px;
+  }
+* { 
+  font-family: Gill Sans, sans-serif;
+  color: #fff
+}
+/*/Primeiros botoes/*/
+#btnOpcao1 {
+  height: 35px;
+  width: 150px;
+  background-color: #09a359;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 20px;
+  transition: background-color 0.5s ease;
+  cursor: pointer
+}
+
+#btnOpcao1:hover {
+  background-color: #1f5821;
+}
+
+#btnOpcao2 {
+  height: 35px;
+  width: 150px;
+  background-color: #d20a0a;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 20px;
+  transition: background-color 0.5s ease;
+  cursor: pointer
+}
+
+#btnOpcao2:hover {
+  background-color: #970505;
+}
+
+#btnOpcao3 {
+  height: 35px;
+  width: 150px;
+  background-color: #9b59b6;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 20px;
+  transition: background-color 0.5s ease;
+  cursor: pointer
+}
+
+#btnOpcao3:hover {
+  background-color: #661b87;
+}
+/*/Botoes da Opcao 'Com destino'/*/
+#btnOpcao1_1 {
+  height: 35px;
+  width: 110px;
+  background-color: #e67e22;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 20px;
+  transition: background-color 0.5s ease;
+  cursor: pointer
+}
+
+#btnOpcao1_1:hover {
+  background-color: #d35400;
+}
+
+#btnOpcao1_2 {
+  height: 35px;
+  width: 110px;
+  background-color: #1abc9c;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 20px;
+  transition: background-color 0.5s ease;
+  cursor: pointer
+}
+
+#btnOpcao1_2:hover {
+  background-color: #16a085;
+}
+
+#btnOpcao1_3{
+  height: 40px;
+  width: 110px;
+  background-color: #4f4f4f;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 20px;
+  transition: background-color 0.5s ease;
+  cursor: pointer
+}
+
+#btnOpcao1_3:hover {
+  background-color: #0b0b0b;
+}
+
+/*/Botoes da Opcao 'Sem destino'/*/
+#btnOpcao2_1 {
+  height: 35px;
+  width: 110px;
+  background-color: #34495e;
+  color: white;
+  font-size: 16px;
+  border-radius: 20px;
+  transition: background-color 0.5s ease;
+  border-style: outset;
+  border-color: #6086ad;
+  border-width: medium;
+  cursor: pointer
+}
+
+#btnOpcao2_1:hover {
+  background-color: #618ab3;
+}
+
+#btnOpcao2_2 {
+  display: inline-block;
+  height: 35px;
+  width:110px;
+  font-size: 16px;
+  text-align: center;
+  background-image: url('https://dbdzm869oupei.cloudfront.net/img/mantels/preview/40668.png');
+  background-size: 70px;
+  transition: box-shadow 0.3s ease-in-out;
+  border-style: solid;
+  border-radius: 20px;
+  border-color: #8e44ad;
+  color: white;
+  cursor: pointer
+}
+
+#btnOpcao2_2:hover {
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.555);
+}
+
+#btnOpcao2_3 {
+  height: 35px;
+  width:110px;
+  background: repeating-linear-gradient(to top right, #fff, #fff 10px, #add8e6 10px, #add8e6 20px);
+  background-size: 300% 300%; /* Define o tamanho do gradiente */
+  border-radius: 20px;
+  border: 2px;
+  border-style: solid;
+  border-color: #0aabe0;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer
+}
+@keyframes movimento {
+  0% {
+    background-position: 0% 0; /* Define a posição inicial */
+  }
+  100% {
+    background-position: 300% 0; /* Define a posição final */
+  }
+}
+
+#btnOpcao2_3:hover {
+  opacity: 0.8;
+  animation: movimento 4s ease-in infinite; /* Define a animação */
+  
+}
+
+#btnOpcao3_1{
+  height: 35px;
+  width: 110px;
+  background-color: #009432;
+  font-size: 16px;
+  box-shadow: 0px 0px 10px #009432;
+  transition: box-shadow 0.5s ease;
+  border: none;
+  border-radius: 20px;
+  transition: background-color 0.5s ease;
+  cursor: pointer
+}
+
+#btnOpcao3_1:hover {
+  background-color: #006266;
+  box-shadow: 0px 0px 0px
+}
+
+#btnOpcao3_2{
+  height: 35px;
+  width: 110px;
+  background-color: #F79F1F;
+  box-shadow: 0px 0px 10px #F79F1F;
+  font-size: 16px;
+  border: none;
+  border-radius: 20px;
+  transition: background-color 0.5s ease;
+  transition: box-shadow 0.5s ease;
+  cursor: pointer
+}
+
+#btnOpcao3_2:hover {
+  background-color: #EE5A24;
+  box-shadow: 0px 0px 0px
+}
+
+#btnOpcao3_3{
+  height: 35px;
+  width: 110px;
+  background: repeating-linear-gradient();
+  background-color: #B53471;
+  box-shadow: 0px 0px 10px #B53471;
+  font-size: 16px;
+  border: none;
+  border-radius: 20px;
+  transition: background-color 0.5s ease;
+  transition: box-shadow 0.5s ease;
+  cursor: pointer
+}
+
+#btnOpcao3_3:hover {
+  background-color: #833471;
+  box-shadow: 0px 0px 0px
+}
+
+#btnOpcao4_1{
+  height: 35px;
+  width: 110px;
+  border: 1px solid;
+  background: repeating-linear-gradient(to top right, #151f29, #151f29 10px, #FFC312 10px);
+  background-size: 300% 300%;
+  border-radius: 20px;
+  border-color: #FFC312;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer
+}
+
+@keyframes movimento1 {
+  0% {
+    background-position: 0% 0; /* Define a posição inicial */
+  }
+  100% {
+    background-position: 300% 0; /* Define a posição final */
+  }
+}
+
+#btnOpcao4_1:hover {
+  animation: movimento1 4s ease-in infinite; /* Define a animação */
+  
+  
+}

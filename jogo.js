@@ -77,7 +77,11 @@ document.querySelector("#btnOpcao2_3").addEventListener("click", function() {
 });/*/
 
 document.querySelector("#btnOpcao4_1").addEventListener("click", function() {
-	alert("Vamos para o Cinema do Atrium!\nQual filme veremos?");
+	document.querySelector("#opcao1").style.display = "none";
+	document.querySelector("#opcao2").style.display = "none";
+	document.querySelector("#opcao3").style.display = "none";
+    document.querySelector("#opcao4").style.display = "none";
+	documento.querySelector("#opcaotit").style.display = "none";
 });
 
 document.querySelector("#btnOpcao4_3").addEventListener("click", function() {
