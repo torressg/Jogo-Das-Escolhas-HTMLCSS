@@ -13,6 +13,15 @@ body {
   color: #fff
 }
 /*/Primeiros botoes/*/
+#replay{
+  height: 20px;
+  width: 60px;
+  background-color: #f77f00;
+  color:white;
+  border-radius: 16px;
+  border: none;
+  cursor: pointer
+}
 #btnOpcao1 {
   height: 35px;
   width: 150px;
@@ -69,12 +78,14 @@ body {
   font-size: 16px;
   border: none;
   border-radius: 20px;
-  transition: background-color 0.5s ease;
+  
+  transition: background-color 0.1s ease;
   cursor: pointer
 }
 
 #btnOpcao1_1:hover {
   background-color: #d35400;
+  box-shadow:inset 0px 0px 5px 0px #000000;
 }
 
 #btnOpcao1_2 {
@@ -102,7 +113,8 @@ body {
   border: none;
   border-radius: 20px;
   transition: background-color 0.5s ease;
-  cursor: pointer
+  cursor: pointer;
+  text-shadow: 1px 1px 0px red;
 }
 
 #btnOpcao1_3:hover {
@@ -121,7 +133,8 @@ body {
   border-style: outset;
   border-color: #6086ad;
   border-width: medium;
-  cursor: pointer
+  cursor: pointer;
+  
 }
 
 #btnOpcao2_1:hover {
@@ -237,12 +250,11 @@ body {
 #btnOpcao4_1{
   height: 35px;
   width: 110px;
-  border: 1px solid;
-  background: repeating-linear-gradient(to top right, #151f29, #151f29 10px, #FFC312 10px);
+  border: 2px solid;
+  background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59, #f64f59, #c471ed, #12c2e9);
   background-size: 300% 300%;
   border-radius: 20px;
   border-color: #FFC312;
-  transition: all 0.4s ease-in-out;
   cursor: pointer
 }
 
@@ -251,12 +263,76 @@ body {
     background-position: 0% 0; /* Define a posição inicial */
   }
   100% {
-    background-position: 300% 0; /* Define a posição final */
+    background-position: 100% 0; /* Define a posição final */
   }
 }
 
 #btnOpcao4_1:hover {
-  animation: movimento1 4s ease-in infinite; /* Define a animação */
-  
-  
+  opacity: 0.8;
+  animation: movimento1 2s ease infinite; /* Define a animação */
 }
+
+#btnOpcao4_2{
+  height: 35px;
+  width: 110px;
+  border: 2px solid #8338ec;
+  background-color: transparent;
+  font-size: 16px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+@keyframes movimento2 {
+  0% {
+    width: 110px;
+  }
+  50% {
+    width: 250px;
+  }
+  100% {
+    width: 110px;
+  }
+}
+
+#btnOpcao4_2:hover {
+  animation: movimento2 0.4s;
+}
+
+#btnOpcao4_3{
+  height: 35px;
+  width: 110px;
+  border: 2px solid #00b4d8;
+  background-color: #4cc9f0;
+  font-size: 16px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+#btnOpcao4_3:hover{
+  transform: translate(10px, 10px);
+}
+
+/*/Modal Comeca a partir daqui/*/
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+  backdrop-filter: blur(3px);
+}
+
+.modal-content {
+  background-color: #aa1717;
+  margin: 220px auto;
+  padding: 20px;
+  border: 0px;
+  width: 60%;
+  max-width: 600px;
+}
+
+

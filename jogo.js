@@ -45,12 +45,12 @@ document.querySelector("#btnOpcao1_1").addEventListener("click", function() {
     document.querySelector("#opcao4").style.display = "block";
 });
 
-document.querySelector("#btnOpcao1_2").addEventListener("click", function() {
+/*/document.querySelector("#btnOpcao1_2").addEventListener("click", function() {
 	alert("Simbora pra KEZ Padaria comer um Cinnamol Roll.\nCompra as passagens do metro, pega um guarda-chuva e partiu!");
-});
+});/*/
 
 /*/document.querySelector("#btnOpcao1_3").addEventListener("click", function valorMotel() {
-});/*/
+});
 
 document.querySelector("#btnOpcao2_1").addEventListener("click", function() {
 	alert("Vamos para o parque dar um rolezin. Como é algo curto, você tem direito a mais uma rodada.");
@@ -62,7 +62,7 @@ document.querySelector("#btnOpcao2_2").addEventListener("click", function() {
 
 document.querySelector("#btnOpcao2_3").addEventListener("click", function() {
 	alert("Vamos descer no shopping sem destino, e comer alguma coisinha, a nossa escolha.");
-});
+});/*/
 
 /*/document.querySelector("#btnOpcao3_1").addEventListener("click", function() {
 	alert("BVoc� escolheu em ver um filme, mas nada aqui � normal, ent�o tinha chance de cair: MELHORAR E FAZER RANDOMICO");
@@ -76,18 +76,87 @@ document.querySelector("#btnOpcao2_3").addEventListener("click", function() {
 	alert("Voc� vai pedir comida!! Entre no programa de Comidas.");
 });/*/
 
-document.querySelector("#btnOpcao4_1").addEventListener("click", function() {
+/*/document.querySelector("#btnOpcao4_1").addEventListener("click", function() {
+	alert("Vamos para o Cinema do Atrium!\nQual filme veremos?");
 	document.querySelector("#opcao1").style.display = "none";
 	document.querySelector("#opcao2").style.display = "none";
 	document.querySelector("#opcao3").style.display = "none";
     document.querySelector("#opcao4").style.display = "none";
-	documento.querySelector("#opcaotit").style.display = "none";
-});
+	document.querySelector("#opcaotit").style.display = "none";/*/
 
-document.querySelector("#btnOpcao4_3").addEventListener("click", function() {
+
+/*/document.querySelector("#btnOpcao4_3").addEventListener("click", function() {
 	alert("Vamos para o Cinema do Plaza!\nQual filme veremos?");
 });
 
 document.querySelector("#btnOpcao4_2").addEventListener("click", function() {
 	alert("Vamos para o Cinema de SCS!\nQual filme veremos?");
-});
+});/*/
+
+/*?document.querySelector("replay").addEventListener("click", function() {
+	document.querySelector("#opcao1").style.display = "none";
+	document.querySelector("#opcao2").style.display = "none";
+	document.querySelector("#opcao3").style.display = "none";
+    document.querySelector("#opcao4").style.display = "none";
+	document.querySelector("#opcaotit").style.display = "none";
+});/*/
+
+/*/Modal comeca aqui/*/
+
+var modal = document.getElementById("myModal");
+
+var btn = document.getElementById("btnOpcao4_1");
+
+var span = document.getElementsByClassName("close")[0];
+
+var modal = document.getElementById("myModal1");
+
+var btn = document.getElementById("btnOpcao4_2");
+
+var span = document.getElementsByClassName("close")[0];
+
+var modal = document.getElementById("myModal2");
+
+var btn = document.getElementById("btnOpcao4_3");
+
+var span = document.getElementsByClassName("close")[0];
+
+var modal = document.getElementById("myModal3");
+
+var btn = document.getElementById("btnOpcao1_2");
+
+var span = document.getElementsByClassName("close")[0];
+
+var modal = document.getElementById("myModal4");
+
+var btn = document.getElementById("btnOpcao2_1");
+
+var span = document.getElementsByClassName("close")[0];
+
+var modal = document.getElementById("myModal4");
+
+var btn = document.getElementById("btnOpcao2_1");
+
+var span = document.getElementsByClassName("close")[0];
+
+var modal = document.getElementById("myModal5");
+
+var btn = document.getElementById("btnOpcao2_2");
+
+var span = document.getElementsByClassName("close")[0];
+
+var modal = document.getElementById("myModal6");
+
+var btn = document.getElementById("btnOpcao2_3");
+
+var span = document.getElementsByClassName("close")[0];
+
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}

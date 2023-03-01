@@ -13,7 +13,7 @@
 <body>
 <div id="container">
 	<h1>Bem vinda ao Jogo das Escolhas!</h1>
-	<h1></h1>
+	<button id="replay" onclick="location.reload()">Replay</button>
 <script>
 	function valorMotel() {
 		const valores = ["caro", "médio", "barato"];
@@ -34,7 +34,7 @@
 		alert(`Hoje nós vamos cozinhar, e a receita escolhida é: \n${receitaSorteada}`); 
 	}
 	function restComida() {
-		const comidas = ["McDonalds","BurguerKing","Subway","Spoleto","Jeronimo","hamburguer Artesanal a sua escolha","Mexicaníssimo"];
+		const comidas = ["McDonalds","BurguerKing","Subway","Spoleto","Jeronimo","hamburguer Artesanal a sua escolha","Mexicaníssimo", "Cabana"];
 		const indiceAleatorio4 = Math.floor(Math.random() * comidas.length);
 		const comidaSorteada = comidas[indiceAleatorio4];
 		alert(`Vamos pedir comida! Peça no restaurante: \n${comidaSorteada}`); 
@@ -47,7 +47,6 @@
 		<button id="btnOpcao3">Não quero passeio</button>
 	</section>
 
-	
 	<section id="opcao1" style="display:none;">
 		<h1>Você quer um passeio com destino.</h1>
         <h2>Mas você quer um...</h2>
@@ -79,11 +78,55 @@
         <button id="btnOpcao4_3">Fácil</button>
 	</section>
 
-	<section id="opcao5" style="display:none;">
-		<h1 id="Atrium">Vamos para o Cinema do Atrium!</h1>
-		<h1 id="Atrium1">Qual filme veremos?</h1>
-	
-	</section>
+<!--Modals-->
+<div id="myModal4" class="modal">
+	<div class="modal-content">
+	  <p>Vamos para o parque dar um rolezin.</p>
+	  <p>Como é algo curto, você tem direito a mais uma rodada.</p>
+	</div>
+  </div>
+
+  <div id="myModal5" class="modal">
+	<div class="modal-content">
+	  <p>Vamos andar na rua, sem rumo, até achar algo que queira parar. </p>
+	  <p>Como é algo curto, você tem direito a mais uma rodada.</p>
+	</div>
+  </div>
+
+  <div id="myModal6" class="modal">
+	<div class="modal-content">
+	  <p>Vamos descer no shopping sem destino, e comer alguma coisinha, a nossa escolha. </p>
+	</div>
+  </div>
+
+<div id="myModal3" class="modal">
+	<div class="modal-content">
+	  <p>Simbora pra KEZ Padaria comer um Cinnamol Roll.</p>
+	  <p>Compra as passagens do metro, pega um guarda-chuva e partiu!</p>
+	</div>
+  </div>
+
+<div id="myModal" class="modal">
+	<div class="modal-content">
+	  <p>Vamos para o Cinema do Atrium!</p>
+	  <p>Qual filme veremos?</p>
+	</div>
+  </div>
+
+  <div id="myModal1" class="modal">
+	<div class="modal-content">
+	  <p>Vamos para o Cinema de SCS!</p>
+	  <p>Qual filme veremos?</p>
+	</div>
+  </div>
+
+  <div id="myModal2" class="modal">
+	<div class="modal-content">
+	  <p>Vamos para o Cinema do Plaza!</p>
+	  <p>Qual filme veremos?</p>
+	</div>
+  </div>
+
 	<script src="jogo.js"></script>
 </body>
 </html>
